@@ -32,9 +32,9 @@
 }
 
 .navbar a:hover {
-    background-color: rgb(15,48,87);
+    background-color: #30475e;
+    color: #fff;
     border-radius: 10px;
-    opacity: 0.4;
     transition: .3s ease-in;
 }
 
@@ -64,7 +64,21 @@
         display:block;
         position: absolute;
         transform: translate(-80%, 50%);
-        color: #30475e;
+        color: #fff;
+    }
+
+    .fa-times-circle {
+        padding: 3px;
+        background-color:  #30475e;
+        border-radius: 10px;
+        box-shadow: 0px 0px 5px 3px #fff;
+    }
+
+    .fa-hamburger {
+        padding: 3px;
+        background-color: #30475e;
+        border-radius: 10px;
+        box-shadow: 0px 0px 5px 3px #fff;
     }
 
     .mobile {

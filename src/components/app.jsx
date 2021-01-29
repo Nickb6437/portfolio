@@ -22,23 +22,21 @@ function App() {
     const PageNotFound = () => (<strong>404! somethings not working!!</strong>);
 
     return (
-        <div>
+        <> 
         {landing ? <Landing /> : 
         <Router basename="/portfolio">
-            <div>
-                <Header />
-                <Switch>
-                   <Route path="/" exact component={About} />
-                   <Route path="/about" component={About} />
-                   <Route path="/projects" component={Projects} />
-                   <Route path="/contact" component={Contact} />
-                   <Route component={PageNotFound}/>
-                </Switch>
-                <Footer />
-            </div>
+            <Header />
+            <Switch>
+                <Route path="/" exact component={About} />
+                <Route path="/about" component={About} />
+                <Route path="/projects" component={Projects} />
+                <Route path="/contact" component={Contact} />
+                <Route component={PageNotFound}/>
+            </Switch>
+            <Footer />
         </Router>
         }
-        </div>
+        </>
     );
 }
 

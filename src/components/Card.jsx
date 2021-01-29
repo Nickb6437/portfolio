@@ -1,5 +1,7 @@
 import React from "react"
-import "./Card.css"
+import LaunchRoundedIcon from '@material-ui/icons/LaunchRounded';
+import Button from '@material-ui/core/Button';
+import "./stylesheets/card.css"
 
 function Card(props) {
     return (
@@ -12,7 +14,17 @@ function Card(props) {
                     <p className="card-text">{props.text}</p>
                             
                     <div className="btn-group">
-                        <a href={props.link} target="_blank" rel="noopener noreferrer" type="button" className="btn">View</a>
+                        <Button
+                            size="medium"
+                            variant="contained"
+                            color="primary"
+                            startIcon={<LaunchRoundedIcon />}
+                            href={props.link}
+                            target="_blank" 
+                            rel="noopener noreferrer"
+                        >
+                            View
+                        </Button>
                     </div>
                     </div>
 

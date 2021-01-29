@@ -52,37 +52,19 @@ H4 {
 }
 
 .iconGrid {
-    margin: 50px auto;
-    display: inline-grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-    grid-template-rows: auto;
-    width: 80%;
-    justify-content: center;
+    display: flex;
+    flex-flow: row wrap;
     align-content: center;
+    justify-content: space-evenly;
+    width: 80%;
+    margin: auto;
 }
 
 .icon {
-    padding: 10px;
-    width: 50%;
+    height: 150px;
+    margin: 10px;
 }
 
-
-@media screen and (min-width: 650px) and (max-width: 850px) {
-
-    .iconGrid {
-        grid-template-columns: 1fr 1fr 1fr;
-        grid-template-rows: auto;
-    }
-
-    h4 {
-        font-size: 35px;
-    }
-}
-
-@media screen and (max-width: 649px) {
-
-    .iconGrid {
-        grid-template-columns: 1fr 1fr;
-        grid-template-rows: auto;
-    }
+.packages {
+    margin-top: 20px;
 }

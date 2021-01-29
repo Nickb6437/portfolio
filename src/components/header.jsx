@@ -1,14 +1,22 @@
-import React, { useState } from "react";
+import React, { useReducer } from "react";
 import { NavLink } from "react-router-dom";
-import "./header.css"
+
+import "./stylesheets/header.css"
+
+const initialState = { clicked: false };
+
+function reducer(state, action) {
+  switch (action.type) {
+    case "active":
+      return { clicked: !state.clicked };
+    default:
+      throw new Error();
+  }
+}
 
 function Header() {
 
-  const [clicked, setClicked]=useState(false);
-
-  function handleClick() {
-    setClicked(!clicked);
-  }
+  const [state, dispatch] = useReducer(reducer, initialState);
 
     return (
       <div className="navbar">
@@ -19,18 +27,18 @@ function Header() {
             src={process.env.PUBLIC_URL + "/images/Logo.PNG"}
           />
 
-        <div className="mobile-icon" onClick={handleClick}>
-          <i className={clicked ? "fas fa-times-circle" : "fas fa-hamburger" }> </i>
+        <div className="mobile-icon"   onClick={() => dispatch({ type: "active" })}>
+          <i className={state.clicked ? "fas fa-times-circle" : "fas fa-hamburger" }> </i>
         </div>
         
-          <div className={clicked ? "nav-links active" : "nav-links"}>
+          <div className={state.clicked ? "nav-links active" : "nav-links"}>
             <NavLink className="link"  to="/about"><i className="fas fa-user-tie"></i> About</NavLink>
             <NavLink className="link" to="/projects"><i className="fas fa-laptop-code"></i> Projects</NavLink>
             <NavLink className="link" to="/contact"><i className="fas fa-envelope"></i> Contact</NavLink>
             <a className="link mobile" href="https://www.linkedin.com/in/nicholas-brown-9964051a1/" target="_blank" rel="noopener noreferrer"><i className="fab fa-linkedin"></i> LinkedIn</a>
             <a className="link mobile" href="https://github.com/Nickb6437" target="_blank" rel="noopener noreferrer"> <i className="fab fa-github"></i> Github</a>
           </div>   
-          </div>
+        </div>
 
         
 

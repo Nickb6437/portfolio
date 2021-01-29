@@ -2,7 +2,7 @@ import React from "react";
 import Card from "./Card"
 import Sites from "../sites"
 
-import "./projects.css"
+import "./stylesheets/projects.css"
 
 function Projects() {
     return (

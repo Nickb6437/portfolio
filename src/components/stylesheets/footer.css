@@ -1,0 +1,50 @@
+hr {
+    height: 1.5px;
+    width: 80%;
+    background-color: #30475e;
+    border-style: none;
+    border-color: #30475e;
+    border-width: 1px 0 0 0;
+    border-radius: 2px;
+    margin-bottom: 30px;
+    box-shadow: 1px 1px 1px grey;
+}
+  
+.sides {
+    width:25%;
+}
+  
+.center {
+    text-align: center;
+    flex-grow: 2;
+    
+}
+  
+.footer {
+    display: flex;
+    font-size: 14px;
+    justify-content: space-around;
+    padding: 20px 80px 20px 80px;
+}
+  
+.footerLogo {
+    width: 25vw;
+}
+  
+#footerIcon {
+    font-size: 5vw;
+    padding:4vh 5px;
+    color: #30475e;
+}
+
+@media screen and (min-width: 1000px) {
+    #footerIcon {
+        padding:9vh 5px;
+    }
+}
+
+@media screen and (min-width: 600px) and (max-width: 999px) {
+    #footerIcon {
+        padding: 6.5vh 5px;
+    }
+}
