@@ -77,7 +77,23 @@ const Sites = [
         link: "https://7hhbb.csb.app/",
         image: process.env.PUBLIC_URL + "/images/KeeperApp.JPG",
         title: "Keeper App using React",
-        alt: "Keeper App"
+        alt: "Keeper App"        
+    },
+    {
+        id:11,
+        text: "Version 1 of the contact form using useState.",
+        link: "https://codesandbox.io/s/contact-form-usestate-v1-dfsw0",
+        image: process.env.PUBLIC_URL + "/images/useState.JPG",
+        title: "Contact Form V1",
+        alt: "Contact Form V1"
+    },
+    {
+        id:12,
+        text: "Version 2 of the contact form, updated to useReducer from useState",
+        link: "https://codesandbox.io/s/usereducer-contact-form-v2-7iedy",
+        image: process.env.PUBLIC_URL + "/images/useReducer.JPG",
+        title: "Contact Form V2",
+        alt: "Contact Form V2"
     }
 ];
 
