@@ -39,8 +39,12 @@ function About() {
                 <div><img className="icon hyper" src={process.env.PUBLIC_URL + "/images/Hyper.PNG"} alt="Hyper"/></div>
                 <div><img className="icon vscode" src={process.env.PUBLIC_URL + "/images/Vscode-logo.PNG"} alt="vs code"/></div>
                 <div><img className="icon atom" src={process.env.PUBLIC_URL + "/images/Atom.PNG"} alt="Atom"/></div>
+                <div><img className="icon Wordpress" src={process.env.PUBLIC_URL + "/images/Wordpress.PNG"} alt="Wordpress"/></div>
+                <div><img className="icon Sass" src={process.env.PUBLIC_URL + "/images/Sass.PNG"} alt="Sass"/></div>
+                <div><img className="icon Tailwind" src={process.env.PUBLIC_URL + "/images/Tailwind.PNG"} alt="Tailwind"/></div>
+                <div><img className="icon PhpMySql" src={process.env.PUBLIC_URL + "/images/PhpMySql.PNG"} alt="PhpMySql"/></div>
                 </div>
-                <p className="packages"><em>HTML 5 | CSS 3 | JavaScript | JQuery | NodeJS | ExpressJS | Bootstrap 5 | ES6 | Babel | MongoDB | React | Github </em><br />
+                <p className="packages"><em>HTML 5 | CSS 3 | JavaScript | JQuery | NodeJS | ExpressJS | Bootstrap 5 | ES6 | Babel | MongoDB | React | Github | Tailwind | Sass | Wordpress | PHP </em><br />
                 <br />Please use this site to look through my projects and watch my progression.</p>
 
                 <h4>Nick</h4>
