@@ -95,6 +95,14 @@ const Sites = [
         title: "Contact Form V2",
         alt: "Contact Form V2"
     }
+    {
+        id:13,
+        text: "Playing around with Vue.js for the first timme.",
+        link: "https://codepen.io/Nickb6437/pen/ExXVXNV",
+        image: process.env.PUBLIC_URL + "/images/Vue-js.JPG",
+        title: "Random User Generator Vue.js",
+        alt: "Random User Generator Vue.js"
+    }
 ];
 
 export default Sites; 
