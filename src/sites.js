@@ -94,7 +94,7 @@ const Sites = [
         image: process.env.PUBLIC_URL + "/images/useReducer.JPG",
         title: "Contact Form V2",
         alt: "Contact Form V2"
-    }
+    },
     {
         id:13,
         text: "Playing around with Vue.js for the first timme.",
