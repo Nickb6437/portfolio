@@ -15,10 +15,10 @@ function About() {
 
             <div className="text-area">   
                 <p>Welcome and thank you for visiting my portfolio site. <br/>
-                Like many in 2020 I found myself facing redundancy due to the events of the year. <br />
+                Like many in 2020 I found myself redundant due to the events of the year. <br />
                 I have been in print & design for 14 years with experience in lithographic print, digital print, print finishing <br />
                 & digital design, using such designs suites as Adobe CS6, Indesign, Photoshop, Illustrator & Dreamweaver, however... <br />
-                I feel this now opens a great opportunity for me to branch out, learn new skills and embark on an exciting new career path. <br/>
+                I feel this now opened a great new opportunity for me to branch out, learn new skills and embark on an exciting new career path. <br/>
                 <br />During 5 months of furlough in 2020 I embarked on the challenge to learn the basics of </p>
                 
                
@@ -45,7 +45,10 @@ function About() {
                 <div><img className="icon PhpMySql" src={process.env.PUBLIC_URL + "/images/PhpMySql.PNG"} alt="PhpMySql"/></div>
                 </div>
                 <p className="packages"><em>HTML 5 | CSS 3 | JavaScript | JQuery | NodeJS | ExpressJS | Bootstrap 5 | ES6 | Babel | MongoDB | React | Github | Tailwind | Sass | Wordpress | PHP </em><br />
-                <br />Please use this site to look through my projects and watch my progression.</p>
+                In April 2021 I was taken under the wing of ICAAL in Southampton as Junior Web Developer. <br />
+                Here I have been really able to enhance and build on the skills I learnt, <br /> 
+                <br />adding new technologies and launges to my skill set. 
+                <br /> Please use this site to look through my projects and watch my progression.</p>
 
                 <h4>Nick</h4>
             </div>
