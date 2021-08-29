@@ -46,7 +46,7 @@ function About() {
                 </div>
                 <p className="packages"><em>HTML 5 | CSS 3 | JavaScript | JQuery | NodeJS | ExpressJS | Bootstrap 5 | ES6 | Babel | MongoDB | React | Github | Tailwind | Sass | Wordpress | PHP </em><br />
                 <br />
-                In April 2021 I was taken under the wing of ICAAL in Southampton as Junior Web Developer. <br />
+                In April 2021 I was taken under the wing of <a href="https://www.internetconsultancy.pro/?gclid=CjwKCAjw4KyJBhAbEiwAaAQbE2nTE4gamnXKiaPkxwX4nI_bJpwqKjBibZqfMNy1sfYMtIZljKZkzxoCcDIQAvD_BwE" target="_blank">ICAAL</a> in Southampton as Junior Web Developer. <br />
                 Here I have been really able to enhance and build on the skills I learnt, <br /> 
                 adding new technologies and launges to my skill set. 
                 <br />
