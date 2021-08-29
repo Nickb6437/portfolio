@@ -45,9 +45,11 @@ function About() {
                 <div><img className="icon PhpMySql" src={process.env.PUBLIC_URL + "/images/PhpMySql.PNG"} alt="PhpMySql"/></div>
                 </div>
                 <p className="packages"><em>HTML 5 | CSS 3 | JavaScript | JQuery | NodeJS | ExpressJS | Bootstrap 5 | ES6 | Babel | MongoDB | React | Github | Tailwind | Sass | Wordpress | PHP </em><br />
+                <br />
                 In April 2021 I was taken under the wing of ICAAL in Southampton as Junior Web Developer. <br />
                 Here I have been really able to enhance and build on the skills I learnt, <br /> 
-                <br />adding new technologies and launges to my skill set. 
+                adding new technologies and launges to my skill set. 
+                <br />
                 <br /> Please use this site to look through my projects and watch my progression.</p>
 
                 <h4>Nick</h4>
