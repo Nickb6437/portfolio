@@ -102,6 +102,14 @@ const Sites = [
         image: process.env.PUBLIC_URL + "/images/Vue-js.JPG",
         title: "Random User Generator Vue.js",
         alt: "Random User Generator Vue.js"
+    },
+    {
+        id:14,
+        text: "Rebuild of a site using NuxtJs and Notion Api as CMS, with Express doing all the heavy lifting. The site is still progress and it is my first time using both Nuxt and Notion APi.",
+        link: "https://healing-sancturay.herokuapp.com/",
+        image: process.env.PUBLIC_URL + "/images/HealingSanctuary.PNG",
+        title: "NuxtJS and Notion API",
+        alt: "NuxtJS and Notion API"
     }
 ];
 

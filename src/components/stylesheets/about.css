@@ -58,13 +58,23 @@ H4 {
     justify-content: space-evenly;
     width: 80%;
     margin: auto;
+    gap: 1rem;
 }
 
 .icon {
-    height: 150px;
-    margin: 10px;
+    height: 115px;
+    filter: grayscale(.7);
+    transition: all 0.5s;
+}
+
+.icon:hover {
+    filter: none;
 }
 
 .packages {
     margin-top: 20px;
+}
+
+a > span {
+    color: black;
 }
