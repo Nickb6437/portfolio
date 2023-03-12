@@ -106,10 +106,18 @@ const Sites = [
     {
         id:14,
         text: "Rebuild of a site using NuxtJs and Notion Api as CMS, with Express doing all the heavy lifting. The site is still progress and it is my first time using both Nuxt and Notion APi.",
-        link: "https://healing-sancturay.herokuapp.com/",
+        link: "https://www.melshealingsanctuary.co.uk/",
         image: process.env.PUBLIC_URL + "/images/HealingSanctuary.PNG",
         title: "NuxtJS and Notion API",
         alt: "NuxtJS and Notion API"
+    },
+    {
+        id:15,
+        text: "Site build for my wife's new venture. Front-end is built with Vue and Inertia Js which is sitting on a Laravel backend. A customer dashboard, with blogs, videos, recipes is still in development.",
+        link: "https://nutritizewellbeing.co.uk/",
+        image: process.env.PUBLIC_URL + "/images/HealingSanctuary.PNG",
+        title: "Lavavel Breeze (inertia js, Vue js, Mysql)",
+        alt: "Lavavel Breeze (inertia js, Vue js, Mysql)"
     }
 ];
 
