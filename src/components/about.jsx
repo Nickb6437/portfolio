@@ -44,7 +44,7 @@ function About() {
                 <div><img className="icon Tailwind" src={process.env.PUBLIC_URL + "/images/Tailwind.PNG"} alt="Tailwind"/></div>
                 <div><img className="icon PhpMySql" src={process.env.PUBLIC_URL + "/images/PhpMySql.PNG"} alt="PhpMySql"/></div>
                 <div><img className="icon Nuxt" src={process.env.PUBLIC_URL + "/images/NuxtJS_Logo.PNG"} alt="Sass"/></div>
-                <div><img className="icon Vue" src={process.env.PUBLIC_URL + "/images/vue3.PNG"} alt="Tailwind"/></div>
+                <div><img className="icon Vue" src={process.env.PUBLIC_URL + "/images/vue3.PNG"} alt="Vue3 js"/></div>
                 <div><img className="icon Laravel" src={process.env.PUBLIC_URL + "/images/Laravel.PNG"} alt="PhpMySql"/></div>
                 </div>
                 <p className="packages"><em>HTML 5 | CSS 3 | JavaScript | JQuery | NodeJS | ExpressJS | Bootstrap 5 | ES6 | Babel | MongoDB | React | Github | Tailwind | Sass | Wordpress | PHP | Nuxt JS | VUE 3 | Laravel 8 </em><br />
