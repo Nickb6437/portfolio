@@ -60,8 +60,8 @@ function About() {
                 <br />
                 <a href="https://www.sprayituk.com/" className=""><strong>Spray It Ltd</strong> <span> - A site build with a bespoke quote form, allowing for the user to highlight damaged areas and upload multiple images.</span></a>
                 <br />
-                <a href="https://trianta.co.uk/" className=""><strong>Trianta</strong> <span> - New site design and build, with a bespoke installer sign up form and custom find an installer map.</span></a>
-                <br /> 
+                {/* <a href="https://trianta.co.uk/" className=""><strong>Trianta</strong> <span> - New site design and build, with a bespoke installer sign up form and custom find an installer map.</span></a> */}
+                {/* <br />  */}
                 <br /> 
                 Please use this site to look through my projects and watch my progression.</p>
 
