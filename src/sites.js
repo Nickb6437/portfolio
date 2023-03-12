@@ -115,7 +115,7 @@ const Sites = [
         id:15,
         text: "Site build for my wife's new venture. Front-end is built with Vue and Inertia Js which is sitting on a Laravel backend. A customer dashboard, with blogs, videos, recipes is still in development.",
         link: "https://nutritizewellbeing.co.uk/",
-        image: process.env.PUBLIC_URL + "/images/HealingSanctuary.PNG",
+        image: process.env.PUBLIC_URL + "/images/NutritizeWellbeing.PNG",
         title: "Lavavel Breeze (inertia js, Vue js, Mysql)",
         alt: "Lavavel Breeze (inertia js, Vue js, Mysql)"
     }
