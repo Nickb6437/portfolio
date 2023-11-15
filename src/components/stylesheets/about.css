@@ -1,5 +1,4 @@
 .wrapper {
-    margin: 5rem auto 0;
     padding: 0 2rem;
 }
 
@@ -7,6 +6,7 @@
 .about-further-info {
     max-width: var(--w-6xl);
     margin-inline: auto;
+    padding-block: 2rem;
 }
 
 .about-intro {
@@ -15,7 +15,6 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    padding-bottom: 4rem;
     gap: 2rem;
 }
 
@@ -44,10 +43,6 @@
     align-items: center;
     justify-content: center;
     width: 100%;
-}
-
-.about-further-info {
-    padding-block: 4rem;
 }
 
 .circle-img {
@@ -79,7 +74,6 @@
     border-radius: .75rem;
     box-shadow: -.25rem .25rem .75rem 0.15rem var(--clr-tertiary);
     overflow: hidden;
-    min-width: var(--w-md);
 }
 
 .project-example__img > img{
@@ -104,7 +98,6 @@
     border-radius: .75rem;
     box-shadow: .25rem .25rem .75rem 0.15rem var(--clr-tertiary);
     overflow: hidden;
-    min-width: var(--w-md);
 }
 
 .project-example> .project-example__content > .btn {
@@ -219,6 +212,12 @@
 
 /************ responsive ************/
 
+@media screen and (min-width: 576px) {
+    .project-example__img {
+        min-width: var(--w-md);
+    }
+}
+
 @media (min-width: 1024px) {
     .circle-img {
         height: 12rem;
@@ -226,7 +225,11 @@
 
     .about-intro {
         flex-direction: row;
-        margin: 0 auto 4rem;
+    }
+
+    .about-intro,
+    .about-further-info {
+        padding-block: 4rem;
     }
 
     .about-intro__image-svg {

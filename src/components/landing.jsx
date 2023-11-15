@@ -21,18 +21,24 @@ function Landing() {
 
 
     return (
-        <div className="wrapper">
+        <div className="landing-wrapper">
             <Collapse in={logo}>
-                <img className="Landing" src={process.env.PUBLIC_URL + "/images/Logo.PNG"} alt="Logo" />
+                <img 
+                    className="Landing" 
+                    src={process.env.PUBLIC_URL + "/images/Logo.PNG"} 
+                    alt="Logo" 
+                    width="100%"
+                    height="auto"               
+                />
             </Collapse>
             <Fade in={text}>
                 <>
                     <h1>
                         Nick Brown 
                     </h1>
-                    <h2>
+                    <h3>
                         Full Stack Open-Source Web Developer!
-                    </h2>
+                    </h3>
                 </>
             </Fade>
         </div>
