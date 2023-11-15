@@ -1,0 +1,140 @@
+:root {
+  /* Colors */
+  --clr-primary: rgba(48, 71, 94, 1);
+  --clr-primary-75: rgba(48, 71, 94, .75);
+  --clr-primary-0: rgba(48, 71, 94, 0);
+  --clr-secondary: rgba(255, 209, 5, 1);
+  --clr-tertiary: rgba(0, 56, 24, 1);
+  --clr-white: rgba(255, 255, 255, 1);
+  --clr-grey-10: rgb(210, 210, 210);
+  --clr-white-opacity: rgba(255, 255, 255, 0.664);
+
+  /* Fonts */
+  --font-title: 'Courgette', cursive;
+  --font-body: 'Overpass', sans-serif;
+  --w-prose: 90ch;
+
+  /* widths */
+  --w-prose: 90ch;
+  --w-6xl: 80rem;
+  --w-5xl: 64rem;
+  --w-4xl: 56rem;
+  --w-3xl: 48rem;
+  --w-2xl: 42rem;
+  --w-xl: 36rem;
+  --w-lg: 32rem;
+  --w-md: 28rem;
+  --w-sm: 24rem;
+  --w-xs: 20rem;
+
+  /* navbar heights */
+  --h-navbar: 80px;
+  --h-navbar-mobile: 54px;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body { 
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  background: var(--clr-primary);
+  background-size: 100%;
+  color: var(--clr-grey-10);
+  text-align: center;
+  font-family: var(--font-body);
+  font-size: 16px;
+  line-height: 1.5;
+  font-weight: 400;
+  z-index: 0;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  color: var(--clr-white);
+  font-family: var(--font-title);
+  font-weight: 800;
+  margin: 0 0 1rem;
+  padding: 0;
+}
+
+h1 {
+  font-size: clamp(3rem, 6.5vw, 3.75rem);
+}
+
+h2 {
+  font-size: clamp(2.25rem, 4.5vw, 3rem);
+}
+
+h3 {
+  font-size: clamp(1.875rem, 3.5vw, 2.25rem);
+}
+
+h4 {
+  font-size: clamp(1.5rem, 3vw, 1.875rem);
+}
+
+h5 {
+  font-size: clamp(1.25rem, 2.5vw, 1.5rem);
+}
+
+h6 {
+  font-size: clamp(1.125rem, 2vw, 1.25rem);
+}
+
+.subheading {
+  font-family: var(--font-body);
+  color: var(--clr-grey-10);
+  font-size: clamp(1.5rem, 3vw, 2rem);
+  font-weight: bold;
+  margin-top: 1.5rem;
+}
+
+p {
+  margin: 0 0 1rem;
+  max-width: var(--w-prose);
+}
+
+a {
+  color: var(--clr-white);
+}
+
+a > span {
+  color: var(--clr-white);
+}
+
+.site404 {
+  height: calc(100vh - 413px);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-size: 2.5rem;
+  font-weight: 600;
+}
+
+.yodaPush {
+  max-width: 20rem;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.btn.btn-primary{
+  background: var(--clr-primary);
+  border: 1px solid var(--clr-secondary);
+  border-radius: 4px;
+  color: var(--clr-white);
+  font-weight: 500;
+  text-decoration: none;
+  transition: background-color 300ms ease-in-out, color 300ms ease-in-out;
+  padding: 0.5rem 1rem;
+}
+
+.btn.btn-primary:hover {
+  background: var(--clr-secondary);
+  border: 1px solid var(--clr-secondary);
+  color: black;
+}

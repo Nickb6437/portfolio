@@ -8,7 +8,7 @@ const initialState = { clicked: false };
 
 function reducer(state, action) {
   switch (action.type) {
-    case "SENT STATUS":
+    case "SENT":
       return { sent: !state.sent };
     default:
       throw new Error();
@@ -29,37 +29,46 @@ function Contact() {
     const message = messageRef.current.value;
     const email = emailRef.current.value;
     const contact = { name, email, message };
+    const flashMessage = document.querySelector(".flash-message");
+
+    flashMessage.classList.remove("hidden");
 
     if (name === "") {
-      alert("Please enter your name");
-    } else if (message === "") {
-      alert("Please enter type your message");
+      flashMessage.innerHTML ="Please enter your name";
     } else if (
       new RegExp(/[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,15}/g).test(email) ===
       false
     ) {
-      alert("Please enter valid email adress");
-    } else {
+      flashMessage.innerHTML = "Please enter a valid email adress";
+    } else if (message === "") {
+      flashMessage.innerHTML = "Please leave your message";
+    }  else {
       Axios.post("https://portfolio-contactform.herokuapp.com/email", {contact})
         .then((res) => {
           if (res.data.success === true) {
-            dispatch({ type: "SENT STATUS" });
-            console.log("sent");
-          } else {
-            console.log("Message failed");
+            dispatch({ type: "SENT" });
+            flashMessage.innerHTML = "Your message has been sent!";
           }
         })
         .catch((err) => {
-          console.log("Message not sent" + err);
+          dispatch({ type: "ERROR" });
+          flashMessage.innerHTML = "something went wrong. Please try again." + err;
         });
     }
   }
 
   return (
-    <div className="container">
-      <h2 className="contact-title">Contact me, I'd love to hear from you</h2>
+    <div className="container-contact">
+      <div className="container-contact__content">
+        <h2 className="container-contact__title">Contact me!</h2>
+        <h4 className="container-contact__subtitle">I'd love to hear from you</h4>
+        <p className="container-contact__body">
+          If you have any questions, would like coloberate on a project or have job opprituinty, please feel
+          free contact me. I will get back to you as soon as I can.
+        </p>
+      </div>
 
-      <div className="contactForm">
+      <div className="container-contact__form">
         <Form>
           <Form.Group>
             <Form.Label htmlFor="name">Name</Form.Label>
@@ -92,21 +101,19 @@ function Contact() {
             />
           </Form.Group>
 
-          <Button
-            onClick={submitMessage}
-            className="d-inlinne-block"
-            size="lg"
-            variant="primary"
-            type="submit"
-          >
-            Send
-          </Button>
+          <div className="container-contact__form-footer">
+            <div className={`flash-message hidden ${state.sent ? 'flash-message__success' : 'flash-message__error'}`}>
+            </div>
+        
+            <Button
+              onClick={submitMessage}
+              className="container-contact__button"
+              type="submit"
+            >
+              Send
+            </Button>
+          </div>
 
-          {state.sent ? (
-            <strong>Email Sent</strong>
-          ) : (
-            <strong>Email Not Sent</strong>
-          )}
         </Form>
       </div>
     </div>

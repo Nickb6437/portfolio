@@ -13,17 +13,39 @@ function App() {
     const [landing, setLanding]= useState(false);
 
     useEffect(() => {
-        setLanding(true);
-        setTimeout(() => {
+        const visited = sessionStorage.getItem('landing');
+        console.log(visited);
+        if (visited) {
+            setLanding(true);
+        } else {
             setLanding(false);
-        }, 3000);
+            sessionStorage.setItem('landing', 'true');
+            setTimeout(() => {
+                window.location.reload();
+            }, 3000);
+        }
     }, []);
 
-    const PageNotFound = () => (<strong>404! somethings not working!!</strong>);
+    console.log(landing);
+
+    const PageNotFound = () => (
+        <div className="site404">
+            <p className="">
+                Hmm a wrong turn you have taken!
+            </p>
+            <p className="">
+                A distubance in the code there is.
+            </p>
+            <div className="yodaPush">
+                <img src={process.env.PUBLIC_URL + "/images/yoda.PNG"} alt="yoda" />
+                <h1>404</h1>
+            </div>
+        </div>
+    );
 
     return (
         <> 
-        {landing ? <Landing /> : 
+        {!landing ? <Landing /> : 
         <Router basename="/portfolio">
             <Header />
             <Switch>
@@ -41,3 +63,4 @@ function App() {
 }
 
 export default App;
+    

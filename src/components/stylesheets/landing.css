@@ -9,21 +9,3 @@
     height: 60%;
     margin: 60px auto 0px;
 }
-
-h1 {
-    color: #30475e;
-    font-family: 'Courgette', cursive;
-    font-size: 3rem;
-    font-weight: 800;
-    padding-top: 1%;
-}
-
-
-/*****************************Responsiveness*****************************/
-
-
-@media screen and (max-width: 770px) {
-    h1 {
-        font-size: 2rem;
-    }
-}

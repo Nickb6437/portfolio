@@ -1,30 +1,33 @@
 import React from "react";
-import Card from "./Card"
 import Sites from "../sites"
-
+import ProjectCard from "./projectCard"
 import "./stylesheets/projects.css"
+
+const sortedSites = Sites.sort((a, b) => b.id - a.id);
 
 function Projects() {
     return (
-        <div>
-            <h2 className="projects-title">A few of my projects</h2>
-
-            <div className="container">
-                <div className="row">
-                    {Sites.map((site) => (
-                            <Card
-                                id={site.id}
-                                text={site.text}
-                                title={site.title}
-                                link={site.link}
-                                image={site.image}
-                                alt={site.alt}
-                            />
-                        ))}
+        <>
+            <div className="projects-container">
+                <h2 className="projects-container__title">Personal Projects and Sites</h2>
+                <p className="projects-container__body">
+                    Here are some of the projects and sites I've worked on. 
+                    I've included a brief description of each project, as well as links to the sites or codepens themselves.
+                </p>
+                <div className="projects-container__rows">
+                    {sortedSites.map((site) => (
+                        <ProjectCard
+                            id={site.id}
+                            text={site.text}
+                            title={site.title}
+                            link={site.link}
+                            image={site.image}
+                            alt={site.alt}
+                        />
+                    ))}
                 </div>
             </div>
-
-        </div>
+        </>
     );     
 }
 

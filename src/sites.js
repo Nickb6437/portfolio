@@ -50,7 +50,7 @@ const Sites = [
     {
         id:7,
         text: "A simple no frills Node.js newsletter signup using the Mailchimp API.",
-        link: "https://evening-reaches-31304.herokuapp.com/",
+        link: "https://sore-puce-goose-wear.cyclic.app",
         image: process.env.PUBLIC_URL + "/images/Newsletter.JPG",
         title: "Newsletter Sign Up",
         alt: "Newsletter Site"
@@ -105,10 +105,10 @@ const Sites = [
     },
     {
         id:14,
-        text: "Rebuild of a site using NuxtJs and Notion Api as CMS, with Express doing all the heavy lifting. The site is still progress and it is my first time using both Nuxt and Notion APi.",
+        text: "Rebuild of a site using NuxtJs and Notion Api as the CMS, with Express doing all the heavy lifting. The site is still inprogress and it is my first time using both Nuxt and Notion APi.",
         link: "https://www.melshealingsanctuary.co.uk/",
         image: process.env.PUBLIC_URL + "/images/HealingSanctuary.PNG",
-        title: "NuxtJS and Notion API",
+        title: "Mels Healing Sanctuary",
         alt: "NuxtJS and Notion API"
     },
     {
@@ -116,7 +116,7 @@ const Sites = [
         text: "Site build for my wife's new venture. Front-end is built with Vue and Inertia Js which is sitting on a Laravel backend. A customer dashboard, with blogs, videos, recipes is still in development.",
         link: "https://nutritizewellbeing.co.uk/",
         image: process.env.PUBLIC_URL + "/images/NutritizeWellbeing.PNG",
-        title: "Lavavel Breeze (inertia js, Vue js, Mysql)",
+        title: "Nutritize Wellbeing",
         alt: "Lavavel Breeze (inertia js, Vue js, Mysql)"
     }
 ];
