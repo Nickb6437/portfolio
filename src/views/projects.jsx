@@ -1,7 +1,7 @@
 import React from "react";
 import Sites from "../sites"
-import ProjectCard from "./projectCard"
-import "./stylesheets/projects.css"
+import ProjectCard from "../components/projectCard"
+import "../stylesheets/projects.css"
 
 const sortedSites = Sites.sort((a, b) => b.id - a.id);
 

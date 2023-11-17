@@ -1,6 +1,6 @@
 import React, { useReducer } from "react";
 import { NavLink } from "react-router-dom";
-import "./stylesheets/header.css"
+import "../stylesheets/header.css"
 
 const initialState = { clicked: false };
 

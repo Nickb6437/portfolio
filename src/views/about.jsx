@@ -1,5 +1,18 @@
 import React from "react";
-import "./stylesheets/about.css"
+import Slider from "react-slick";
+import ProjectExample from "../components/project-example";
+import ProjectExamples from "../project-examples";
+
+import "../stylesheets/about.css"
+
+let settings = { 
+    dots: true,
+    arrows: false,
+    infinite: true,
+    dragable: true,
+    fade: true,
+    className: 'slide'
+}
 
 function About() {
     return (
@@ -88,98 +101,13 @@ function About() {
                         <br/>
                         <em>*These site may have changed and been worked on since I depart the company and therefor may not be a true resprentation on my work</em>
                     </p>
-                    <div className="project-example project-example__left">
-                        <div className="project-example__img">
-                            <img 
-                                src={process.env.PUBLIC_URL + "/images/uf.JPG"} 
-                                alt="ultraframe"
-                                width="100%"
-                                height="auto"
+                    <Slider {...settings}>
+                        {ProjectExamples.map((project) => (
+                            <ProjectExample 
+                                project={project}
                             />
-                        </div>
-                        <div className="project-example__content">
-                            <h3>Ultraframe</h3>
-                            <p>
-                                The Ultraframe site, was an existing laravel 5.6 site, with numerous subdomains and dashboards. I would regulary help manage tickest, adding new pages, updating content and adding new features. One of these features was the HUP confifurator. This was a bespoke configurator built using Vue JS, which allows the user to build their own conservatory and get a quote.
-                            </p>
-                            <a 
-                                href="https://www.ultraframe-conservatories.co.uk/hup" 
-                                className="btn btn-primary"
-                                target="_blank"
-                                rel="noopener noreferrer"
-                            >
-                                View Site
-                            </a> 
-                        </div>
-                    </div>
-                    <div className="project-example project-example__right">
-                        <div className="project-example__content">
-                            <h3>Eco Star Double Glazing Au</h3>
-                            <p>
-                                The Eco Star Solar site was a wordpress site rebuild. Built using the sage bedrock starter theme. I was responsible for liasing with the client (In Australia), design and building the site. The site boasted custom sql queries to display the correct home page hero and mobile showroom data on the correct days.
-                            </p>
-                            <a
-                                href="https://www.ecostardoubleglazing.com.au/"
-                                className="btn btn-primary"
-                                target="_blank"
-                                rel="noopener noreferrer"
-                            >View Site</a>
-                        </div>
-                        <div className="project-example__img">
-                            <img 
-                                src={process.env.PUBLIC_URL + "/images/ecoStar.JPG"} 
-                                alt="Eco Star Double Glazing AU" 
-                                width="100%"
-                                height="auto"
-                            />
-                        </div>
-                    </div>
-                    <div className="project-example project-example__left">
-                        <div className="project-example__img">
-                            <img 
-                                src={process.env.PUBLIC_URL + "/images/eta.JPG"} 
-                                alt="Exeter Trade Aluminium"
-                                width="100%"
-                                height="auto"
-                            />
-                        </div>
-                        <div className="project-example__content">
-                            <h3>Exeter Trade Aluminium</h3>
-                            <p>
-                                The Exeter Trade Aluminium site was a wordpress site rebuild. Built using the sage bedrock starter theme. I was responsible for liasing with the client, design and building the site. The site boasts a bespoke quote form, which allows the user to select the product they are interested in, and upload images or plans. The site holds a lot of technical product data which is displayed in a clean and easy to read way
-                            </p>
-                            <a 
-                                href="https://exetertradealuminium.co.uk/" 
-                                className="btn btn-primary"
-                                target="_blank"
-                                rel="noopener noreferrer"
-                            >
-                                View Site
-                            </a> 
-                        </div>
-                    </div>
-                    <div className="project-example project-example__right">
-                        <div className="project-example__content">
-                            <h3>Clear Vision Services</h3>
-                            <p>
-                                The Clear Vision Services site was a wordpress site rebuild. Built using the sage bedrock starter theme. I was responsible for liasing with the client, design and building the site. The site boasts both a commerical and residential side. Upon first viewing the site the site you are greeted with a landing page to choose yur service level. It also incorporates a bespoke quote form, which allows the user to input their property details and get a quote for the service they require.
-                            </p>
-                            <a
-                                href="https://clearvisionservices.co.uk/"
-                                className="btn btn-primary"
-                                target="_blank"
-                                rel="noopener noreferrer"
-                            >View Site</a>
-                        </div>
-                        <div className="project-example__img">
-                            <img 
-                                src={process.env.PUBLIC_URL + "/images/cvs.JPG"} 
-                                alt="Clear Vision Services" 
-                                width="100%"
-                                height="auto"
-                            />
-                        </div>
-                    </div>
+                        ))}
+                    </Slider>
                 </div>
             </div>
             <div className="about-further-info">

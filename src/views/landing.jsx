@@ -2,7 +2,7 @@ import React, {useState, useEffect} from "react";
 import Collapse from "@material-ui/core/Collapse";
 import Fade from "@material-ui/core/Fade";
 
-import "./stylesheets/landing.css";
+import "../stylesheets/landing.css";
 
 function Landing() {
 

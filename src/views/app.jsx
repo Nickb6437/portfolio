@@ -1,10 +1,10 @@
 import React, {useState, useEffect} from "react";
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
-import Header from "./header";
+import Header from "../components/header";
 import About from "./about";
 import Projects from "./projects";
 import Contact from "./contact";
-import Footer from "./footer";
+import Footer from "../components/footer";
 import Landing from "./landing";
 
 
@@ -14,7 +14,6 @@ function App() {
 
     useEffect(() => {
         const visited = sessionStorage.getItem('landing');
-        console.log(visited);
         if (visited) {
             setLanding(true);
         } else {
@@ -25,8 +24,6 @@ function App() {
             }, 3000);
         }
     }, []);
-
-    console.log(landing);
 
     const PageNotFound = () => (
         <div className="site404">

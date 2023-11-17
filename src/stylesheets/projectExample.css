@@ -1,0 +1,135 @@
+/* Project Examples */
+.project-example {
+  padding-block: 3rem;
+  padding-inline: 1rem;
+  display: flex !important;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  text-align: left;
+}
+
+.project-example__img {
+  position: relative;
+  width: 100%;
+  aspect-ratio: 16/9;
+  border: 2px solid var(--clr-secondary);
+  border-radius: .75rem;
+  box-shadow: -.25rem .25rem .75rem 0.15rem var(--clr-tertiary);
+  overflow: hidden;
+}
+
+.project-example__img > img{
+  position: absolute;
+  inset: 0;
+  margin: auto;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.project-example__content-tags {
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: .5rem;
+  font-size: 0.75rem;
+}
+
+.project-example__content > h6 {
+  width: 100%;
+  font-family: var(--font-body);
+  font-size: 1rem;
+  margin-bottom: .25rem;
+}
+
+.project-example__content-tag:first-child {
+  padding-right: .5rem
+}
+
+.project-example__content-tag:not(:first-child) {
+  border-left: 1px solid var(--clr-grey-10);
+  padding-inline: .5rem
+}
+
+.project-example__right > .project-example__content {
+  order: 2;
+}
+
+.project-example__right > .project-example__img {
+  order: 1;
+  position: relative;
+  width: 100%;
+  aspect-ratio: 16/9;
+  border: 2px solid var(--clr-secondary);
+  border-radius: .75rem;
+  box-shadow: .25rem .25rem .75rem 0.15rem var(--clr-tertiary);
+  overflow: hidden;
+}
+
+.project-example> .project-example__content > .btn {
+  display: block;
+  width: fit-content;
+  margin-left: auto;
+  margin-top: .5rem;
+}
+
+ 
+.slick-dots > li {
+  --dot-w: 25px;
+  --dot-h: 5px;
+  width: var(--dot-w);
+  transition: all .3s ease-in-out;
+}
+
+.slick-dots > li.slick-active {
+  --dot-w-active: 30px;
+  width: var(--dot-w-active);
+}
+
+.slick-dots > li > button {
+  width: var(--dot-w);
+}
+
+.slick-dots > li > button:before {
+  content: '';
+  width: var(--dot-w);
+  height: var(--dot-h);
+  padding: 0;
+  background-color: var(--clr-secondary);
+} 
+
+.slick-dots > li.slick-active > button:before {
+  width: var(--dot-w-active);
+} 
+
+/************ responsive ************/
+
+@media screen and (min-width: 576px) {
+  .project-example__img {
+      min-width: var(--w-md);
+  }
+}
+
+@media (min-width: 1024px) {
+  .project-example {
+      flex-direction: row;
+      gap: 2rem;
+  }
+
+  .project-example__right > .project-example__content {
+      order: 1;
+  }
+  
+  .project-example__right > .project-example__img {
+      order: 2;
+      position: relative;
+      width: 100%;
+      aspect-ratio: 16/9;
+      border: 2px solid var(--clr-secondary);
+      border-radius: .75rem;
+      box-shadow: .25rem .25rem .75rem 0.15rem var(--clr-tertiary);
+      overflow: hidden;
+      min-width: var(--w-md);
+  }
+}

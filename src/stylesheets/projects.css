@@ -9,7 +9,6 @@
 
 .projects-container__rows {
   display: grid;
-  grid-template-columns: repeat(1, minmax(var(--w-sm), 1fr));
   grid-gap: 2rem;
   padding-block: 3rem;
 }

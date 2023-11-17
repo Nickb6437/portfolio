@@ -2,6 +2,13 @@
     padding: 0 2rem;
 }
 
+.slide {
+	margin-inline: auto;
+    padding-inline: 1rem;
+    width: 100%;
+	max-width: var(--w-6xl);
+}
+
 .about-intro,
 .about-further-info {
     max-width: var(--w-6xl);
@@ -51,60 +58,6 @@
     box-shadow: 0 0 .75rem 0.25rem #fff;
     height: 10rem;
     aspect-ratio: 1; 
-}
-
-
-
-/* Project Examples */
-.project-example {
-    padding-block: 3rem;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    gap: 1rem;
-    text-align: left;
-}
-
-.project-example__img {
-    position: relative;
-    width: 100%;
-    aspect-ratio: 16/9;
-    border: 2px solid var(--clr-secondary);
-    border-radius: .75rem;
-    box-shadow: -.25rem .25rem .75rem 0.15rem var(--clr-tertiary);
-    overflow: hidden;
-}
-
-.project-example__img > img{
-    position: absolute;
-    inset: 0;
-    margin: auto;
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-}
-
-.project-example__right > .project-example__content {
-    order: 2;
-}
-
-.project-example__right > .project-example__img {
-    order: 1;
-    position: relative;
-    width: 100%;
-    aspect-ratio: 16/9;
-    border: 2px solid var(--clr-secondary);
-    border-radius: .75rem;
-    box-shadow: .25rem .25rem .75rem 0.15rem var(--clr-tertiary);
-    overflow: hidden;
-}
-
-.project-example> .project-example__content > .btn {
-    display: block;
-    width: fit-content;
-    margin-left: auto;
-    margin-top: .5rem;
 }
 
 /* Skills Section */
@@ -211,13 +164,6 @@
 }
 
 /************ responsive ************/
-
-@media screen and (min-width: 576px) {
-    .project-example__img {
-        min-width: var(--w-md);
-    }
-}
-
 @media (min-width: 1024px) {
     .circle-img {
         height: 12rem;
@@ -234,31 +180,6 @@
 
     .about-intro__image-svg {
         width: 50vw;
-    }
-
-    /* Project Examples */
-    .project-example {
-        display: flex;
-        flex-direction: row;
-        align-items: center;
-        justify-content: center;
-        gap: 2rem;
-    }
-
-    .project-example__right > .project-example__content {
-        order: 1;
-    }
-    
-    .project-example__right > .project-example__img {
-        order: 2;
-        position: relative;
-        width: 100%;
-        aspect-ratio: 16/9;
-        border: 2px solid var(--clr-secondary);
-        border-radius: .75rem;
-        box-shadow: .25rem .25rem .75rem 0.15rem var(--clr-tertiary);
-        overflow: hidden;
-        min-width: var(--w-md);
     }
 
     /* Skills Section */
@@ -280,7 +201,5 @@
     .blur-end {
         display: none;
     }
-    
-
 }
 
